@@ -1,11 +1,9 @@
-ansible_user: ec2-user
-ansible_password: DevOps321
-MONGODB_HOST: mongodb.daws90s.shop
-REDIS_HOST: redis.daws90s.shop
-MYSQL_HOST: mysql.daws90s.shop 
-RABBITMQ_HOST: rabbitmq.daws90s.shop 
-CATALOGUE_HOST: catalogue.daws90s.shop
-USER_HOST: user.daws90s.shop
-CART_HOST: cart.daws90s.shop
-SHIPPING_HOST: shipping.daws90s.shop
-PAYMENT_HOST: payment.daws90s.shop
+MONGODB_HOST: mongodb-{{ env }}.devops90s.space
+REDIS_HOST: redis-{{ env }}.devops90s.space
+MYSQL_HOST: mysql-{{ env }}.devops90s.space 
+RABBITMQ_HOST: rabbitmq-{{ env }}.devops90s.space 
+CATALOGUE_HOST: catalogue.backend-alb-{{ env }}.devops90s.space
+USER_HOST: user.backend-alb-{{ env }}.devops90s.space
+CART_HOST: cart.backend-alb-{{ env }}.devops90s.space
+SHIPPING_HOST: shipping.backend-alb-{{ env }}.devops90s.space
+PAYMENT_HOST: payment.backend-alb-{{ env }}.devops90s.space
