@@ -2,8 +2,8 @@ MONGODB_HOST: mongodb-{{ env }}.devops90s.space
 REDIS_HOST: redis-{{ env }}.devops90s.space
 MYSQL_HOST: mysql-{{ env }}.devops90s.space 
 RABBITMQ_HOST: rabbitmq-{{ env }}.devops90s.space 
-CATALOGUE_HOST: catalogue.backend-alb-{{ env }}.devops90s.space
-USER_HOST: user.backend-alb-{{ env }}.devops90s.space
-CART_HOST: cart.backend-alb-{{ env }}.devops90s.space
-SHIPPING_HOST: shipping.backend-alb-{{ env }}.devops90s.space
-PAYMENT_HOST: payment.backend-alb-{{ env }}.devops90s.space
+CATALOGUE_HOST: catalogue.backend-lb-{{ env }}.devops90s.space
+USER_HOST: user.backend-lb-{{ env }}.devops90s.space
+CART_HOST: cart.backend-lb-{{ env }}.devops90s.space
+SHIPPING_HOST: shipping.backend-lb-{{ env }}.devops90s.space
+PAYMENT_HOST: payment.backend-lb-{{ env }}.devops90s.space
